@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrapper">
+    <header id="logo-container">
+      <img src="images/logo.svg" id="img-logo" alt="">
+    </header>
+    <div class="txt-container">
+      <h1><span id="title-span">We are launching</span> soon!</h1>
+      <p>Subscribe and get notified</p>
+    </div>
+    <div class="form-container">
+      <form action="" id="form">
+
+        <input type="email" placeholder="Your email adress..." class="input-email" oninput="validateLength()" oninput="validateEmail()">
+        <button type="submit" onsubmit="">Notify Me</button> 
+        <img src="images/error.png" alt="" class="error-img">
+
+        <div class="msg-error-empty">
+          <p id="msg-error-empty">Cannot be empty</p>
+        </div>
+        
+        <div class="msg-error-email">
+          <p id="msg-error-email">The email address is not formatted correctly</p>
+        </div>
+      </form>
+    </div>
+    <img src="images/illustration-dashboard.png" id='dashboard' alt="">
+
+    <div class="social-icons">
+      <a href="#"><img src="images/logo-facebook.svg" alt=""></a>
+      <a href="#"><img src="images/logo-twitter.svg" alt=""></a>
+      <a href="#"><img src="images/logo-instagram.svg" alt=""></a>
+    </div>
+    
+    <h4>&copy; Copyright Ping. All rights reserved.</h4>
+
+<script src="scripts/script.js"></script>
+</body>
+
+</html>
